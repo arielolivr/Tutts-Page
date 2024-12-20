@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #400f56;
+    --secondary-color: #f37601;
+    --font-family: 'Outfit', Arial, sans-serif;
+    --font-size: 18px;
+    --icon-size: 24px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.125rem;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+header img {
+    max-width: 75px;
+}
+
+.map {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    width: 100%;
+}
+
+.icon {
+    max-width: var(--icon-size);
+    margin-right: 8px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.treatment, .contact, .address {
+    margin: 1.25rem;
+}
+
+.map {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    min-height: 50px;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+@media (max-width: 768px) {
+    .footer-contacts {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .treatment, .contact, .address {
+        margin-top: 1.5;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    video {
+        width: 100%;
+    }
+}
